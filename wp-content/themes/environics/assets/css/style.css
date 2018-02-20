@@ -1809,7 +1809,7 @@ a {
 
 /* line 104, ../sass/navigation/_menus.scss */
 .close .patty, .close:hover .patty, .close:focus .patty {
-  right: -60rem; }
+  opacity: 0; }
 /* line 108, ../sass/navigation/_menus.scss */
 .modal .close {
   top: 2rem;

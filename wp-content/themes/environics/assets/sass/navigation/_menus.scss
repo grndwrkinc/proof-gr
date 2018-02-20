@@ -102,7 +102,7 @@
 .close {	
 
 	.patty, &:hover .patty, &:focus .patty {
-		right: -60rem;
+		opacity: 0;
 	}
 
 	.modal & {
