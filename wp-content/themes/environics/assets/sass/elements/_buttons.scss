@@ -1,0 +1,308 @@
+button, .alm-load-more-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	font-family: $font__main;
+	@include font-size(1.4);
+	margin: 0;
+	text-shadow: none;
+}
+
+.barr, .alm-load-more-btn, .form-submit, 
+.comment-reply-link,
+.frm_submit {
+	position: relative;
+	cursor: pointer;
+	padding-left: 1rem;
+
+	&:after {
+		content: '';
+		position: absolute;
+		background-color: $mediumpurple;
+		height: 2rem;
+		left: 0;
+		bottom: -0.5rem;
+		right: 0;
+		z-index: -1;
+		@include transition(all 0.1s ease);
+	}
+
+	&:hover {
+
+		&:after {
+			height: 4rem;
+		}
+	}
+}
+
+.cantrust-container .barr:after,
+.comment-reply-link:after {
+	bottom: -1rem;
+}
+
+.form-submit, .comment-reply-link {
+	padding-left: 1rem;
+	&:after {
+		width: 12rem;
+	}
+}
+
+h1 .btn.barr {
+	display: block;
+	@include font-size(7);
+	@include line-height(8);
+	color: white;
+	font-family: $font__subheading;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.capabilities-wrapper h3.barr {
+	padding-left: 1rem;
+
+	&:after {
+		bottom: 0;
+	}
+
+	&:hover {
+		&:after {
+			height: 9rem;
+		}
+	}
+}
+
+.tile-content.barr {
+	&:after {
+		bottom: 0;
+	}
+}
+
+.read-more.barr {
+	padding-left: 0.5rem;
+	margin-top: 3rem;
+	width: 50%;
+
+	&:after {
+		bottom: -1rem;
+	}
+}
+
+.team-container .barr {
+	padding-left: 0.5rem;
+	&:hover {
+		&:after {
+			height: 5rem;
+		}
+	}
+}
+
+.page-work .hero-container .span_8 h1 .btn.barr {
+	&:after {
+		bottom: 2rem;
+	}
+
+	&:hover {
+		&:after {
+			height: 7rem;
+		}
+	}
+}
+
+.cantrust-img .barr {
+	padding: 0 1rem;
+
+	&:after {
+		bottom: 3.5rem;
+	}
+
+	&:hover {
+		&:after {
+			height: 8rem;
+		}
+	}
+}
+
+.tile-inner h4.barr:after {
+	bottom: 0.5rem;
+}
+
+.jobs-container h4.barr {
+
+	&:after {
+		height: 1.75rem;
+		bottom: 0;
+	}
+
+	&:hover {
+		&:after {
+			height: 3.5rem;
+		}
+	}
+}
+
+.divider button {
+	border: 1px solid $extralightpurple;
+	color: $darkgrey;
+	background-color: $white;
+	@include transition(all 0.1s ease);
+
+	&:hover {
+		color: $lightpurple;
+	}
+}
+
+.btn-gold, .divider .btn-gold {
+	border: 2px solid $gold;
+	color: $darkpurple;
+	background-color: $white;
+	// @include transition(all 0.15s ease);
+
+	&:hover {
+		background-color: $gold;
+		color: $white;
+	}
+}
+
+.press-container h5.barr {
+	padding-left: 1rem;
+	
+	&:after {
+		bottom: -1rem;
+	}
+}
+
+.alm-load-more-btn {
+	position: absolute;
+	bottom: 6rem;
+	left: 50%;
+	z-index: 3;
+	padding: 0;
+	transform: translateX(-50%);
+	border: none;
+	background: none;
+	opacity: 1;
+	padding: 0 3rem 0 0.5rem;
+	@include transition(all 0.15s ease);
+
+	&:after {
+		bottom: -0.8rem;
+	}
+}
+
+//Social Share buttons
+.social-share {
+	@include outer-container();
+	padding: 2rem 0 0;
+
+	ul {
+		@include display(flex);
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	li {
+		background: $extralightpurple;
+		border-radius: 50%;
+		width: 26px;
+		height: 26px;
+		margin: 0 0.667rem;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		cursor: pointer;
+		padding-left: 1px;
+		@include font-size(1.2);
+	}
+}
+
+.thinking-cantrust .social-share {
+	margin-bottom: -2.5em;
+	padding: 4em 0 0;
+}
+
+.team-container .social-share {
+	padding: 0;
+	
+		li {
+		width: 36px;
+		height: 36px;
+		font-size: 1.8rem;
+	}
+}
+
+
+//group of 4 buttons
+.four-buttons{
+	display: -webkit-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex; 
+	display: flex;  
+	display: flex;
+	flex-wrap: wrap;
+
+	a {
+		flex: auto!important;
+	}
+}
+
+.btn {
+	@extend .read-more;
+}
+
+
+@media (max-width: 768px) { 
+
+	.capabilities-wrapper h3.barr {
+		padding-right: 2rem;
+	}
+
+	.read-more.barr:after {
+		bottom: -0.5rem;
+	}
+
+	.tile-inner h4.barr:after {
+		bottom: 0;
+	}
+
+	.cantrust-img .barr {
+		&:after {
+			bottom: 1.5rem;
+		}
+
+		&:hover {
+			&:after {
+				height: 1.6rem;
+			}
+		}
+	}
+
+	.page-work .hero-container .span_8 h1 .btn.barr:after {
+		bottom: 1rem;
+	}
+
+	h1 .btn.barr {
+		@include font-size(3.5);
+		@include line-height(4);
+	}
+
+	.barr, .alm-load-more-btn, .capabilities-wrapper h3.barr, 
+	.form-submit, .comment-reply-link {
+		&:after {
+			height: 1.6rem;
+		}
+
+		&:hover {
+			&:after {
+				height: 1.6rem;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+

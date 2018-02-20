@@ -1,0 +1,84 @@
+//Block colours
+$lightpurple: #582C83;
+$extralightpurple: #F2EAF9;
+$mediumpurple: #d5b8eb;
+$darkpurple: #3C1053;
+$orange: #E57200;
+$darkorange: #D45D00;
+//remove
+$darkpurple_transparent: rgba(48,11,69, 0.85);
+$darkpurple_nav: rgba(48,11,69, 0.95);
+$teal: #5fd5c6;
+$teal_transparent: rgba(48,183,166, 0.7);
+$lightteal: #deeeec;
+$black_transparent: rgba(29, 29, 29, 0.8);
+
+//Font colours
+$white: #ffffff;
+$white_transparent: rgba(255,255,255, 0.4);
+$grey: #979087;
+$darkgrey: #524a3f;
+$lightgrey: #E1E1E1;
+//remove
+$gold: #f2bd37;
+
+//Triangle colours (background)
+//remove
+$greypurple: #806d8b;
+
+
+// Ndrscrs colours
+$color__background-body: $white;
+$color__background-screen: $white;
+$color__background-hr: $teal;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: $darkgrey;
+$color__text-input: $darkgrey;
+$color__text-input-focus: $darkpurple;
+$color__link: inherit;
+$color__link-visited: $white_transparent;
+$color__link-hover: $gold;
+$color__text-main: $darkgrey;
+
+$color__border-button: $lightpurple;
+$color__border-button-hover: $darkpurple;
+$color__border-button-focus: $darkpurple;
+$color__border-input: $darkpurple;
+$color__border-abbr: $darkpurple;
+
+.bg-pattern {
+	background-size: auto !important;
+	background-repeat: repeat !important;
+	background-position: center center;
+}
+
+.bg-pattern-teal {
+	@extend .bg-pattern;
+	background-image: url(../images/ECI-website_pattern.png);
+	background-color: $lightteal;
+}
+
+.bg-pattern-teal-inverted {
+	@extend .bg-pattern;
+	background-image: url(../images/ECI-website_pattern-teal.png);
+	background-color: $white;
+}
+
+.bg-pattern-white {
+	@extend .bg-pattern;
+	background-image: url(../images/ECI-website_pattern-color.png) !important;
+	background-color: $white;
+}
+
+.bg-pattern-purple {
+	@extend .bg-pattern;
+	background-image: url(../images/ECI-website_pattern.png);
+	background-color: $extralightpurple;
+}
+
+.bg-solid-darkpurple {
+	background-color: $darkpurple !important;
+}

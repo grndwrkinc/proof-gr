@@ -1,0 +1,67 @@
+.container {
+	// max-width: $max-width + 20px + 20px !important;
+	max-width: $max-width + 20px + 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+//17 column gird ridiculousness
+.span_1 {
+	width: 5.88%;
+}
+
+.span_3 {
+	width: 17.64%;
+}
+
+.span_4 {
+	width: 23.52%;
+	margin-right: 11.76%;
+}
+
+.span_5 {
+	width: 29.4%;
+	margin-right: 5.88%;
+}
+
+.span_6 {
+	width: 35.28%;
+	margin-right: 5.88%;
+}
+
+.span_7 {
+	width: 41.16%;
+	margin-left: 35.28%;
+}
+
+.span_8 {
+	width: 47.04%;
+}
+
+.span_10 {
+	width: 58.8%;
+	margin-right: 5.88%;
+}
+
+.span_11 {
+	width: 64.68%;
+	margin-right: 5.88%;
+}
+
+.span_13 {
+	width: 76.44%;
+	margin-left: 5.88%;
+}
+
+.span_17 {
+	width: 100%;
+}
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+$full-height: calc(100vh - 5rem + 1px);
+$section-padding-top: 9rem;

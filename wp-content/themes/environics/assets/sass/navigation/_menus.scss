@@ -1,0 +1,371 @@
+.site-header {
+	overflow: hidden;
+}
+
+.hamburger-outer-container {
+	position: fixed;
+	top: 0;
+	max-width: 1366px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 9;
+}
+
+.hamburger-container {
+	position: absolute;
+	top: 31px;
+	right: 0;
+	padding-right: 12rem;
+	@include display(flex);
+	z-index: 9;
+
+	p {
+		font-family: $font__heading;
+		color: $lightpurple;
+		margin: 0 1.5rem 0 0;
+		@include font-size(2.6);
+		font-weight: bold;
+	}
+
+	p:nth-child(6), p:nth-child(7) {
+		margin-right: 0;
+	}
+
+	p.exit {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.hamburger-container.close {
+
+	p {
+		display: none;
+	}
+
+	p.exit {
+		display: block;
+		z-index: 1001;
+	}
+
+	.hamburger {
+		&:before {
+			transform: translateY(8px) rotate(45deg);
+		}
+
+		&:after {
+			transform: translateY(-8px) rotate(-45deg);
+		}
+
+		&:hover {
+			&:before {
+				transform: translateY(8px) rotate(-45deg);
+			}
+
+			&:after {
+				transform: translateY(-8px) rotate(45deg);
+			}
+		}
+	}
+}
+
+.hamburger {
+	position: relative;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	z-index: 1001;
+	text-align: left;
+	margin-right: 1.5rem;
+
+	.patty, &:before, &:after {
+		background-color: $lightpurple;
+		content: "";
+		height: 3px;
+		position: absolute;
+		width: 28px;
+		@include transition(all 0.3s ease);
+	}
+
+	.patty {
+		top: 8px;
+	}
+
+	&:after {
+		top: 16px;
+	}
+}
+
+.close {	
+
+	.patty, &:hover .patty, &:focus .patty {
+		right: -60rem;
+	}
+
+	.modal & {
+		top: 2rem;
+		right: 2rem;
+		z-index: 2001;
+		overflow: hidden;
+		padding-top: 2px;
+		height: 32px;
+
+		&:after {
+			top: 26px;
+		}
+
+	}
+
+	.dropdown & {
+		top: 1rem;
+		right: 1rem;
+	}
+}
+
+.site-branding {
+	.page-title {
+		position: absolute;
+		top: 16px;
+		right: 58px;
+		color: $white_transparent;
+		font-family: $font__subheading;
+		text-transform: uppercase;
+		@include font-size(0.8);
+		letter-spacing: 1px;
+	}
+}
+
+.nav-interior-container {
+	position: relative;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.nav-container {
+	opacity: 0;
+	position: fixed;
+    top: 0;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+	z-index: 8;
+	@include transition(all 0.4s ease);
+
+	&.show {
+		opacity: 1;
+	}
+
+	&.hide {
+		visibility: hidden;
+		transition-delay: 300ms;
+	}
+
+	a {
+		position: relative;
+		z-index: 1;
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		padding: 0;
+
+		li {
+			font-family: $font__heading;
+			@include font-size(3.6);
+			margin-bottom: 3rem;
+			position: relative;
+			padding-right: 4rem;
+			opacity: 0;
+			@include transition(all 0.2s ease);
+
+			&.active {
+				opacity: 1;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				background-color: $extralightpurple;
+				height: 2rem;
+				left: -0.5rem;
+				bottom: 1rem;
+				right: 0;
+				@include transition(all 0.1s ease);
+			}
+
+			&:hover {
+				&:after {
+					height: 5rem;
+				}
+			}
+		}
+	}
+}
+
+.menu-primary-container {
+	background: white;
+
+	.social-icons {
+		@include display(flex);
+		@include justify-content(center);
+		width: 10%;
+		margin: 0 auto;
+	}
+
+	.fa {
+		@include font-size(1.5);
+		margin: 0 2rem 1rem 0;
+	}
+
+	&.outer {
+		position: absolute;
+		right: 0;
+		padding: 12rem 14rem 6rem 6rem;
+	}
+}
+
+
+/* Landing Page Menu */
+.sub-nav-container {
+	padding: 4rem 0;
+}
+
+.sub-nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	position: relative;
+	
+	li {
+		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
+		// margin: 0 5px;
+		letter-spacing: 1px;
+		@include font-size(1.4);
+		@include transition(all 0.1s ease);
+
+		&:hover, &.active {
+			a {
+				color: $lightpurple;
+			}
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		a {
+			padding-right: 1rem;
+		}
+
+		&:last-child {
+			.divider {
+				display: none;
+			}
+		}
+	}
+
+	.divider {
+		padding-right: 1rem;
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.menu-toggle {
+	display: none;
+}
+.main-navigation ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+
+
+
+
+//Tablet + mobile breakpoint
+@media (max-width: 768px) {
+
+	.menu-primary-container.outer {
+		padding: 9rem 6rem 6rem 6rem;
+	}
+
+	.nav-container ul li {
+
+		&:after {
+			height: 1.6rem;
+			bottom: 0;
+		}
+
+		&:hover {
+			&:after {
+				height: 1.6rem;
+			}
+		}
+	}
+
+	.hamburger-container {
+		padding-right: 2rem;
+
+		&.close p.exit, p {
+			display: none;
+		}
+	}
+
+	.hamburger {
+		width: 25px;
+		height: 25px;
+
+		.patty, &:before, &:after {
+			width: 25px;
+		}
+	}
+
+}
+
+
+
+
+
+
+

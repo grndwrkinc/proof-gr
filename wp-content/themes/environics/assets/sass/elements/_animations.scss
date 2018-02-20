@@ -1,0 +1,58 @@
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes slidein {
+	0% { transform: translateX(246px); }
+	100% { transform: translateX(0px); }
+}
+
+@keyframes growin {
+	0% { transform: scale(0.2); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideLeft {
+	0% { transform: translateX(2rem); }
+	100% { transform: translateX(0rem); }
+}
+
+@keyframes slidemargin {
+	0% { margin-left: -500px; }
+	100% { margin-left: 0; }
+}
+
+@keyframes letterE {
+	0% { fill: $darkpurple; fill-opacity: 1; }
+	30% { fill: $darkpurple; fill-opacity: 1; }
+	60% { fill: $white; fill-opacity: 1; }
+	70% { fill: $white; fill-opacity: 1; }
+	100% { fill: $white; fill-opacity: 0; }
+}
+
+@keyframes letterEbackground {
+	0% { opacity: 1 }
+	70% { opacity: 1 }
+	100% { opacity: 0 }
+}
+
+@-webkit-keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}

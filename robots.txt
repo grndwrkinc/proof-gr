@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /clientdata/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /us/wp-admin/
+Disallow: /us/wp-includes/

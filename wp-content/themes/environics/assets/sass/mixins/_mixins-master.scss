@@ -1,0 +1,100 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 10) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+@mixin line-height($sizeValue: 1) {
+	line-height: ($sizeValue * 10) * 1px;
+	line-height: $sizeValue * 1rem;
+}
+
+@mixin rem-size($rule, $sizeValue: 1) {
+	#{$rule}: ($sizeValue * 10) * 1px;
+	#{$rule}: $sizeValue * 1rem;
+}
+
+@mixin letter-spacing($sizeValue: 1) {
+	letter-spacing: ($sizeValue * 10) * 1px;
+	letter-spacing: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Center vertically and horizontally
+@mixin transform-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+//Transitions 
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// White gradient
+@mixin white-gradient {
+	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,0.5) 70%, rgba(255,255,255,0) 100%);
+}
+
+// Underline link transition 
+
+@mixin link-underline {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	@include transition(all 0.15s ease-in-out 0s);
+}
+
+// Category Bars (right under hero image on each page)
+
+@mixin overflow-scroll {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: scroll;
+	&::-webkit-scrollbar { 
+		display: none; 
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: 2;
+		width: 2rem;
+		height: 4rem;
+		bottom: 0;
+		right: 0;				
+		@include linear-gradient(to right, rgba(93,45,131, 0) 0%, rgba(93,45,131, 1) 80%);
+	}
+}
+
+@mixin border-bottom {
+	border-bottom: 1px solid $grey;
+}
+
+

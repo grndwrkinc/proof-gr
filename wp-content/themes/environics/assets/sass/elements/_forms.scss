@@ -1,0 +1,450 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0px solid white;
+	@include font-size(1.8);
+	padding: 0;
+	@include transition(all 0.15s ease);
+	background-color: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: $darkgrey;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+
+//Comments 
+	
+.required {
+	display: none;
+}
+
+#comments {
+	@extend .span_13;
+
+	.comment {
+		@include display(flex);
+		flex-wrap: wrap;
+	}
+
+	h3 {
+		color: $darkgrey;
+		margin-bottom: 6rem
+	}
+
+	h4 {
+		@include font-size(1.8);
+		text-transform: uppercase;
+	}
+
+	li>ol {
+		margin-left: 0;
+	}
+}
+
+.media-body {
+	width: 30.7%;
+
+	h4 {
+		font-family: $font__bold;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+}
+
+.comment-content, .comment-form-comment, .form-submit {
+	width: 69.2%;
+}
+
+.comments-container, .comment-respond {
+	padding: 8rem 0;
+}
+
+.comments-container {
+	@include border-bottom;
+}
+
+.form-submit {
+	display: block;
+	margin-left: 30.7%;
+	float: left;
+
+	input {
+		margin-top: 6rem;
+	}
+}
+
+.comments-area {
+	padding: 3rem 0 0;
+
+	a {
+		color: $gold;
+		@include transition(text-decoration, 0.2s ease);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.comment-respond, .application-form, .report-form {
+
+	input {
+		text-transform: uppercase;
+	}
+}
+
+.comment-container, .application-form {
+	@include outer-container;
+}
+
+.comment-container, .application-form, .report-form {
+	// width: 100%;
+	// padding: 2rem 1.25rem; 
+	// @extend .block;
+	// @extend .container;
+
+	.submit {
+		text-transform: uppercase;
+	}
+
+	textarea {
+		padding: 1rem;
+		border: 1px solid $darkgrey;
+		border-radius: 0;
+	}
+
+	.comment-form-comment {
+		float: right;
+	}
+}
+
+.report-form {
+	max-width: none !important;
+}
+
+.comment-form-author, .comment-form-email {
+	border-bottom: 2px solid $extralightpurple;
+	position: relative;
+
+	@include span-columns(3);
+	input {
+		border: none;
+		width: 100%;
+	}
+}
+
+.depth-1 {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid $lightgrey;
+}
+
+.comment-list {
+	padding: 0;
+	li {
+		@include outer-container;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.comment:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}
+
+.comment-awaiting-moderation {
+	display: none;
+}
+
+.reply-link a {
+	text-transform: uppercase;
+}
+
+li.comment {
+	position: relative;
+}
+
+#cancel-comment-reply-link {
+	font-family: $font__main;
+	font-weight: normal;
+	text-transform: uppercase;
+	@include font-size(1.4);
+	padding-left: 4rem;
+}
+
+.reply-link {
+	margin-top: 1rem;
+}
+
+h3.comment-reply-title {
+	color: $darkgrey;
+	padding: 0 0 2rem 2rem;
+}
+
+.children {
+
+	li {
+		padding-top: 1rem;
+	}
+}
+
+.comment-form-comment {
+	position: relative;
+}
+
+p.comment-noval {
+	left: 0;
+	position: absolute;
+	@include font-size(0.8);
+	color: $gold;
+	margin: 0;
+}
+
+.comment-form-author, .comment-form-email {
+	p.comment-noval {
+		top: 32px;
+	}
+}
+
+.comment-form-comment {
+	p.comment-noval {
+		bottom: -20px;
+	}
+}
+
+//Job application form
+
+.form-container {
+
+	padding: 8rem 5.88%;
+	@include border-bottom;
+
+	h3 {
+		color: $darkgrey;
+		margin-bottom: 4rem;
+
+		span {
+			display: none;
+		}
+	}
+}
+
+.application-form, .report-form {
+
+	.submit {
+		width: 100%;
+		text-align: left;
+		margin-top: 6rem;
+	}
+
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.frm_hidden {
+	display: none;
+}
+
+.frm_submit {
+	float: left;
+	padding-right: 2rem;
+	margin-top: 6rem;
+}
+
+.frm_form_field, .uploads {
+	float: left;
+    display: block;
+    @extend .span_6;
+    margin-right: 5.88%;
+	
+	input {
+		margin: 1rem 0 2rem;
+		border: none;
+		border-bottom: 2px solid $extralightpurple;
+		border-radius: 0;
+		width: 100%;
+		color: $darkgrey;
+	}
+}
+
+.uploads {
+	width: 25%;
+	margin-right: 1rem;
+	margin-top: 2rem;
+}
+
+.frm_upload_text, .frm_small_text {
+	display: none;
+}
+
+.dz-message {
+	padding: 3px;
+	display: block;
+	border-bottom: 2px solid $white;
+}
+
+.dz-filename {
+	margin-top: 1.5rem;
+
+	span {
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.frm_description, .dz-filename span {
+	color: $darkgrey;
+	@include font-size(0.8);
+}
+
+.frm_error_style {
+	@include font-size(1.4);
+	color: #d92a51;
+	transform: translateY(6rem);
+}
+
+.dz-preview {
+	position: absolute;
+	top: 23px;
+}
+
+.dz-remove {
+	@include font-size(1.4);
+	color: #d92a51;
+
+	&:before {
+		content: "x ";
+	}
+}
+
+.frm_error {
+	position: absolute;
+	top: 45px;
+	@include font-size(1.4);
+	color: #d92a51;
+}
+
+.dz-max-files-reached ~ .frm_error {
+	display: none;
+}
+
+.frm_compact_text {
+	opacity: 0;
+}
+
+.uploads .frm_error {
+	top: 40px;
+}
+
+.frm_form_field {
+	position: relative;
+}
+
+.frm_message + .frm_form_fields, .frm_description {
+	display: none;
+}
+
+.frm_message p {
+	color: $darkgrey;
+	@include font-size(2);
+	text-align: center;
+	line-height: 3rem;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.dz-error-mark, .dz-success-mark, .dz-progress, .dz-image, .dz-details .dz-size, .hidden-field {
+	display: none;
+}
+
+.frm_dropzone, .needsclick, .dz-clickable {
+	z-index: 999;
+}
+
+.upload-resume, .upload-cv {
+
+	label {
+		padding: 8px 12px;
+		border: 2px solid $extralightpurple;
+		color: $darkgrey;
+		font-size: 12px;
+		text-align: center;
+		cursor: pointer;
+		text-transform: uppercase;
+		@include transition(all 0.3s ease);
+
+		&:hover {
+			background-color: $extralightpurple;
+		}
+	}
+
+	label.focused {
+		background-color: $white;
+		color: $lightpurple;
+	}
+
+	input {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.dz-message {
+		display: none;
+	}
+}
+
+.download-container {
+	margin-left: 5.88%;
+	padding: 8rem 0 6rem 0;
+
+	h3 {
+		color: $darkgrey;
+		margin-bottom: 2rem;
+	}
+}
+
+input:valid,
+input:invalid,
+input:-moz-placeholder {
+  box-shadow:none !important;
+}

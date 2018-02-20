@@ -1,0 +1,176 @@
+html {
+	font-size: 56.25%; //9px base
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1.8);
+	@include letter-spacing(.03); //30 PSD means 30/1000 = .03rem
+	line-height: $font__line-height-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font__heading;
+	font-weight: bold;
+	clear: both;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	@include font-size(7);
+	@include line-height(7);
+	color: $white;
+	letter-spacing: -1px;
+}
+
+h2 {
+	@include font-size(7);
+	@include line-height(7);
+	margin-bottom: 2rem;
+	color: $darkgrey;
+	letter-spacing: -1px;
+}
+
+h3 {
+	@include font-size(4.2);
+	@include line-height(4);
+	color: $white;
+	letter-spacing: -1px;
+}
+
+h4 {
+	@include font-size(3.6);
+	@include line-height(4.4);
+	color: $darkgrey;
+	letter-spacing: -1px;
+}
+
+h5, .read-more, .role {
+	font-family: $font__bold;
+	font-weight: normal;
+	@include font-size(1.4);
+	@include line-height(1.8);
+	color: $darkgrey;
+	text-transform: uppercase;
+}
+
+p {
+	@include font-size(1.8); 
+	@include line-height(3); 
+	margin-bottom: 1rem;
+	color: $darkgrey;
+}
+
+p.big {
+	@include font-size(2); 
+	@include line-height(2.6); 
+	margin-bottom: 1rem;
+}
+
+p:empty {
+	display: none !important;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+b, strong {
+	font-family: $font__bold;
+	font-weight: normal;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: $color__background-pre;
+	font-family: $font__pre;
+	@include font-size(0.9375);
+	line-height: $font__line-height-pre;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: $font__code;
+	@include font-size(0.9375);
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+
+mark, ins {
+	background: $color__background-ins;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+footer {
+	@include font-size(1.4);
+}
+
+
+@media (max-width: 768px) {
+
+	h1, h2, h3, h4, h5, h6 {
+		letter-spacing: 0;
+	}
+
+	h1 {
+		@include font-size(3.5);
+		@include line-height(4);
+	}
+
+	h2 {
+		@include font-size(3.5);
+		@include line-height(4);
+	}
+
+	h3 {
+		@include font-size(2.4);
+		@include line-height(2.8);
+	}
+
+	h4 {
+		@include font-size(2.4);
+		@include line-height(2.8);
+	}
+
+	p, textarea, li, input {
+		@include font-size(1.6); 
+		@include line-height(2.4); 
+	}
+
+	p.big {
+		@include font-size(1.6); 
+		@include line-height(2.4); 
+	}
+
+}
+
+
+
