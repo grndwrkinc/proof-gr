@@ -184,6 +184,10 @@ environics.init = function() {
 		environics.commentError();
 	}
 
+	if($('.photo-gallery').length){
+		environics.photoGallery();
+	}
+
 	if($(window).width() <= 768 && $('.sub-nav-container').length) {
 		environics.subnavWidth();
 	}
@@ -1065,6 +1069,27 @@ environics.subnavWidth = function() {
 		});
 		$('.sub-nav-container p').css('width', wdth + endPadding);
 	}
+};
+
+//Add photo gallery
+environics.photoGallery = function() {
+	var $carousel = $('.photo-gallery').flickity({
+	  cellAlign: 'left',
+	  contain: true,
+	  adaptiveHeight: true,
+	  cellSelector: 'img',
+	  imagesLoaded: true,
+	  percentPosition: false,
+	  pageDots: false
+	});
+
+	var $caption = $('.captions');
+	var flkty = $carousel.data('flickity');
+
+	$carousel.on( 'select.flickity', function() {
+	  // set image caption using img's alt
+	  $caption.text( flkty.selectedElement.alt );
+	});
 };
 
 //*****************************************************************

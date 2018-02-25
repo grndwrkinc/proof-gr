@@ -116,7 +116,20 @@ get_header();
 		<div class="text-container">
 			<h2 class="span_6"><?php the_field('gallery_header'); ?></h2>
 			<div class="span_10"><?php the_field('gallery_message'); ?></div>
-		</div>
+		</div><!-- //.text-container -->
+
+		<div class="photo-gallery">
+			<?php
+				$galleryimages = get_field('photo_gallery');
+				if( $galleryimages ): ?>
+		        <?php foreach( $galleryimages as $galleryimage ): ?>
+	                <img src="<?php echo $galleryimage['sizes']['large']; ?>" alt="<?php echo $galleryimage['alt']; ?>" />
+		        <?php endforeach; ?>
+			<?php endif; ?>
+		</div><!-- //.photo-gallery -->
+		<p class="captions">&nbsp;</p>
+
+	</div><!-- //.gallery-container -->
 
 			
 <?php endwhile; // End of the page loop. ?>

@@ -196,9 +196,9 @@ body.no-overflow {
 
 //FLICKITY GALLERY
 .flickity-enabled {
-	button {
-		display: none;
-	}
+	// button {
+	// 	display: none;
+	// }
 	.image {
 		display: inline-block;
 	    width: 100%;
@@ -212,6 +212,10 @@ body.no-overflow {
 	    	width: auto;
 	    }
 	}
+}
+
+.flickity-viewport {
+  transition: height 0.3s;
 }
 
 @media (max-width: 768px) {

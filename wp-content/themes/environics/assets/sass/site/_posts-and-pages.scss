@@ -689,6 +689,22 @@
 	}
 }
 
+.gallery-container {
+	padding-bottom: $section-padding-top;
+	border-bottom: 1px solid $grey;
+
+	.photo-gallery {
+		margin: 0 5.88%;
+	}
+
+	.captions {
+		margin: 0 11.76% 0 47.04%;
+		padding: 2rem 3rem;
+		background-color: $extralightpurple;
+		transform: translateY(-4rem);
+	}
+}
+
 .dropdown-content {
 	display: none;	
 }
