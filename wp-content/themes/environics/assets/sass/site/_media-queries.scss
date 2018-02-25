@@ -307,11 +307,17 @@
 			}
 		}
 
-		.gallery-container .captions {
-			margin: 0 11.76% 0 11.76%;
-			padding: 2rem 3rem;
-			background-color: #F2EAF9;
-			transform: translateY(-2rem);
+		.gallery-container {
+			.photo-gallery {
+				margin: 0;
+			}
+
+			.captions {
+				margin: 0 11.76% 0 11.76%;
+				padding: 2rem 3rem;
+				background-color: #F2EAF9;
+				transform: translateY(-2rem);
+			}
 		}
 	}
 
