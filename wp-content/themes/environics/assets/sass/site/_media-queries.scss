@@ -184,7 +184,8 @@
 		}
 	}
 
-	.team-container .dropdown-item:nth-of-type(3n + 1) {
+	.team-container .dropdown-item:nth-of-type(3n + 1),
+	.clients-container .clients-item:nth-of-type(3n + 1) {
 		margin-left: 0;
 	}
 
@@ -203,6 +204,10 @@
     		width: 80%;
     		padding: 2rem;
     		border-bottom: none;
+		}
+
+		.clients-container .span_5 {
+			width: 31.3%;
 		}
 
 		.team-container {

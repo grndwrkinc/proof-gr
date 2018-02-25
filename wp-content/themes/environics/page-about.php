@@ -27,24 +27,24 @@ get_header();
 	</div>
 
 	<!-- CLIENTS -->
-	<div class="clients-container">
-		<div class="text-container">
-			<h2 class="span_6"><?php the_field('clients_header'); ?></h2>
-			<div class="span_10"><?php the_field('clients_message'); ?></div>
-		</div>
-		<div class="clients-gallery">
-			<?php
-				$clientimages = get_field('client_logos');
-				if( $clientimages ): ?>
+	<?php
+	$clientimages = get_field('client_logos');
+	if( $clientimages ): ?>
+		<div class="clients-container">
+			<div class="text-container">
+				<h2 class="span_6"><?php the_field('clients_header'); ?></h2>
+				<div class="span_10"><?php the_field('clients_message'); ?></div>
+			</div>
+			<div class="clients-gallery">
 		        <?php foreach( $clientimages as $clientimage ): ?>
 		            <div class="clients-item span_5">
 	                     <img src="<?php echo $clientimage['sizes']['medium']; ?>" alt="<?php echo $clientimage['alt']; ?>" />
 		            </div>
 		        <?php endforeach; ?>
-			<?php endif; ?>
+			</div>
 		</div>
-	</div>
 	<!-- // .clients-container  -->
+	<?php endif; ?>
 
 	<!-- LEADERSHIP TEAM -->
 	<div class="team-container">
