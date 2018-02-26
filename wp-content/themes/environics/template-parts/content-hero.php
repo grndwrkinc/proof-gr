@@ -11,7 +11,7 @@
 <?php 
 	$hero = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	//Home Page Hero (Background video)
-	if ( is_front_page() ) : 
+	if ( is_front_page() || is_page ('fr') ) : 
 ?>
 	<div class="hero" style="background-image: url('<?php echo $hero; ?>')">
 		<!-- svg content goes here -->

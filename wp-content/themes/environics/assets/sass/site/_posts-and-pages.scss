@@ -49,7 +49,7 @@
 
 //Home Page
 
-.home {
+.home, .page-fr {
 	.hero {
 		height: 60rem;
 		width: 100%;
@@ -101,10 +101,10 @@
 	}
 }
 
-.home, .page-capabilities {
+.home, .page-fr, .page-capabilities {
 	.text-container, .capabilities-container, 
 	.featured-container, .cantrust-container {
-		padding-top: $section-padding-top; //RA
+		padding-top: $section-padding-top;
 	}
 
 	// RA begin

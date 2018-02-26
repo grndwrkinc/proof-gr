@@ -20,7 +20,7 @@
 			</h4>
 			<div class="span_10">
 				<?php the_field('vprop_body'); ?>
-				<p class="read-more barr"><a href="/capabilities/">Explore</a></p>
+				<p class="read-more barr"><a href="/capabilities/">Explorer (en anglais seulement)</a></p>
 			</div>
 	</div>
 

@@ -2168,12 +2168,12 @@ a {
   background-image: url(../images/ECI-website_pattern.png) !important; }
 
 /* line 53, ../sass/site/_posts-and-pages.scss */
-.home .hero {
+.home .hero, .page-fr .hero {
   height: 60rem;
   width: 100%;
   position: relative; }
   /* line 58, ../sass/site/_posts-and-pages.scss */
-  .home .hero img {
+  .home .hero img, .page-fr .hero img {
     width: 70%;
     top: 50%;
     left: 50%;
@@ -2181,42 +2181,43 @@ a {
     transform: translate(-50%, -50%);
     opacity: 0.8; }
 /* line 68, ../sass/site/_posts-and-pages.scss */
-.home .featured-text {
+.home .featured-text, .page-fr .featured-text {
   margin-top: 2rem; }
 /* line 72, ../sass/site/_posts-and-pages.scss */
-.home .capabilities-container {
+.home .capabilities-container, .page-fr .capabilities-container {
   border-bottom: none;
   padding-bottom: 0; }
 /* line 78, ../sass/site/_posts-and-pages.scss */
-.home .text-container .span_11 {
+.home .text-container .span_11, .page-fr .text-container .span_11 {
   column-count: 2;
   margin-right: 0;
   margin-top: 2.666rem; }
   /* line 83, ../sass/site/_posts-and-pages.scss */
-  .home .text-container .span_11 p {
+  .home .text-container .span_11 p, .page-fr .text-container .span_11 p {
     margin-top: 0; }
 /* line 89, ../sass/site/_posts-and-pages.scss */
-.home .vprop-container {
+.home .vprop-container, .page-fr .vprop-container {
   padding-bottom: 9rem;
   border-bottom: 1px solid #979087; }
 /* line 94, ../sass/site/_posts-and-pages.scss */
-.home .cantrust-container {
+.home .cantrust-container, .page-fr .cantrust-container {
   border-bottom: 1px solid #979087;
   padding-bottom: 4.5rem; }
   /* line 98, ../sass/site/_posts-and-pages.scss */
-  .home .cantrust-container .span_6, .home .cantrust-container .frm_form_field, .home .cantrust-container .uploads {
+  .home .cantrust-container .span_6, .home .cantrust-container .frm_form_field, .home .cantrust-container .uploads, .page-fr .cantrust-container .span_6, .page-fr .cantrust-container .frm_form_field, .page-fr .cantrust-container .uploads {
     margin-top: 2.666rem; }
 
 /* line 105, ../sass/site/_posts-and-pages.scss */
 .home .text-container, .home .capabilities-container,
-.home .featured-container, .home .cantrust-container, .page-capabilities .text-container, .page-capabilities .capabilities-container,
+.home .featured-container, .home .cantrust-container, .page-fr .text-container, .page-fr .capabilities-container,
+.page-fr .featured-container, .page-fr .cantrust-container, .page-capabilities .text-container, .page-capabilities .capabilities-container,
 .page-capabilities .featured-container, .page-capabilities .cantrust-container {
   padding-top: 9rem; }
 /* line 111, ../sass/site/_posts-and-pages.scss */
-.home .text-container, .page-capabilities .text-container {
+.home .text-container, .page-fr .text-container, .page-capabilities .text-container {
   padding-top: 6rem; }
 /* line 116, ../sass/site/_posts-and-pages.scss */
-.home .text-container, .home .capabilities-wrapper, .page-capabilities .text-container, .page-capabilities .capabilities-wrapper {
+.home .text-container, .home .capabilities-wrapper, .page-fr .text-container, .page-fr .capabilities-wrapper, .page-capabilities .text-container, .page-capabilities .capabilities-wrapper {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2225,31 +2226,31 @@ a {
   display: -ms-flexbox;
   display: flex; }
 /* line 122, ../sass/site/_posts-and-pages.scss */
-.home .capabilities-container .featured-img, .page-capabilities .capabilities-container .featured-img {
+.home .capabilities-container .featured-img, .page-fr .capabilities-container .featured-img, .page-capabilities .capabilities-container .featured-img {
   padding: 2rem;
   background-size: cover; }
   /* line 126, ../sass/site/_posts-and-pages.scss */
-  .home .capabilities-container .featured-img:hover, .page-capabilities .capabilities-container .featured-img:hover {
+  .home .capabilities-container .featured-img:hover, .page-fr .capabilities-container .featured-img:hover, .page-capabilities .capabilities-container .featured-img:hover {
     transform: scale(1); }
 /* line 131, ../sass/site/_posts-and-pages.scss */
-.home .capabilities-container p, .page-capabilities .capabilities-container p {
+.home .capabilities-container p, .page-fr .capabilities-container p, .page-capabilities .capabilities-container p {
   margin-bottom: 0; }
   /* line 134, ../sass/site/_posts-and-pages.scss */
-  .home .capabilities-container p.one, .page-capabilities .capabilities-container p.one {
+  .home .capabilities-container p.one, .page-fr .capabilities-container p.one, .page-capabilities .capabilities-container p.one {
     margin-right: 29.4%; }
   /* line 138, ../sass/site/_posts-and-pages.scss */
-  .home .capabilities-container p.two, .home .capabilities-container p.three, .page-capabilities .capabilities-container p.two, .page-capabilities .capabilities-container p.three {
+  .home .capabilities-container p.two, .home .capabilities-container p.three, .page-fr .capabilities-container p.two, .page-fr .capabilities-container p.three, .page-capabilities .capabilities-container p.two, .page-capabilities .capabilities-container p.three {
     margin-left: 29.4%; }
 /* line 143, ../sass/site/_posts-and-pages.scss */
-.home .capabilities-container .span_11, .page-capabilities .capabilities-container .span_11 {
+.home .capabilities-container .span_11, .page-fr .capabilities-container .span_11, .page-capabilities .capabilities-container .span_11 {
   margin-left: auto;
   margin-right: 0;
   margin-bottom: 6rem; }
 /* line 149, ../sass/site/_posts-and-pages.scss */
-.home .capabilities-container .featured, .page-capabilities .capabilities-container .featured {
+.home .capabilities-container .featured, .page-fr .capabilities-container .featured, .page-capabilities .capabilities-container .featured {
   border-bottom: 1px solid #979087; }
 /* line 153, ../sass/site/_posts-and-pages.scss */
-.home .capabilities-container .featured:last-child, .page-capabilities .capabilities-container .featured:last-child {
+.home .capabilities-container .featured:last-child, .page-fr .capabilities-container .featured:last-child, .page-capabilities .capabilities-container .featured:last-child {
   margin-right: 0; }
 
 /* line 159, ../sass/site/_posts-and-pages.scss */
