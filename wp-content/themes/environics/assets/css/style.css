@@ -3529,51 +3529,51 @@ footer {
     height: 18rem !important; }
 
   /* line 50, ../sass/site/_media-queries.scss */
-  .home .hero {
+  .home .hero, .page-fr .hero {
     height: 44rem; }
   /* line 54, ../sass/site/_media-queries.scss */
-  .home .text-container {
+  .home .text-container, .page-fr .text-container {
     display: block;
     padding: 4rem 1rem; }
     /* line 58, ../sass/site/_media-queries.scss */
-    .home .text-container h2.span_5 {
+    .home .text-container h2.span_5, .page-fr .text-container h2.span_5 {
       margin-bottom: 2rem; }
     /* line 62, ../sass/site/_media-queries.scss */
-    .home .text-container .span_11 {
+    .home .text-container .span_11, .page-fr .text-container .span_11 {
       column-count: 1;
       margin-top: 0; }
   /* line 68, ../sass/site/_media-queries.scss */
-  .home .capabilities-container {
+  .home .capabilities-container, .page-fr .capabilities-container {
     padding: 4rem 0 0 0;
     border-bottom: 1px solid #979087; }
     /* line 72, ../sass/site/_media-queries.scss */
-    .home .capabilities-container .span_11 {
+    .home .capabilities-container .span_11, .page-fr .capabilities-container .span_11 {
       margin-bottom: 3rem;
       padding: 1rem; }
     /* line 77, ../sass/site/_media-queries.scss */
-    .home .capabilities-container .featured {
+    .home .capabilities-container .featured, .page-fr .capabilities-container .featured {
       border-bottom: none; }
   /* line 82, ../sass/site/_media-queries.scss */
-  .home .capabilities-wrapper {
+  .home .capabilities-wrapper, .page-fr .capabilities-wrapper {
     display: block; }
   /* line 86, ../sass/site/_media-queries.scss */
-  .home .featured-container {
+  .home .featured-container, .page-fr .featured-container {
     padding-top: 4rem; }
   /* line 90, ../sass/site/_media-queries.scss */
-  .home .featured-wrapper .featured:first-child {
+  .home .featured-wrapper .featured:first-child, .page-fr .featured-wrapper .featured:first-child {
     display: block; }
   /* line 94, ../sass/site/_media-queries.scss */
-  .home .cantrust-container {
+  .home .cantrust-container, .page-fr .cantrust-container {
     padding: 4rem 0;
     border-bottom: 1px solid #979087; }
     /* line 98, ../sass/site/_media-queries.scss */
-    .home .cantrust-container .span_6, .home .cantrust-container .frm_form_field, .home .cantrust-container .uploads {
+    .home .cantrust-container .span_6, .home .cantrust-container .frm_form_field, .home .cantrust-container .uploads, .page-fr .cantrust-container .span_6, .page-fr .cantrust-container .frm_form_field, .page-fr .cantrust-container .uploads {
       margin-top: 0; }
   /* line 104, ../sass/site/_media-queries.scss */
-  .home .cantrust-text p, .home .cantrust-text h2 {
+  .home .cantrust-text p, .home .cantrust-text h2, .page-fr .cantrust-text p, .page-fr .cantrust-text h2 {
     padding: 1rem; }
   /* line 109, ../sass/site/_media-queries.scss */
-  .home .cantrust-img h3 {
+  .home .cantrust-img h3, .page-fr .cantrust-img h3 {
     font-size: 35px;
     font-size: 3.5rem;
     line-height: 40px;
