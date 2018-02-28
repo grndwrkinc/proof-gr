@@ -49,6 +49,14 @@
 
 		.hero {
 			height: 44rem;
+
+			.hero-mobile {
+		        display: block;
+		    }
+		    
+		    .hero-desktop {
+		        display: none;
+		    }
 		}
 
 		.text-container {

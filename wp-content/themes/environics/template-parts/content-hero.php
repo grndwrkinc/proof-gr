@@ -15,7 +15,8 @@
 ?>
 	<div class="hero" style="background-image: url('<?php echo $hero; ?>')">
 		<!-- svg content goes here -->
-		<img src="/wp-content/themes/environics/assets/images/ProofStrategiesLogo-white.svg" alt="Proof Strategies">
+		<img class="hero-desktop" src="<?php echo get_field('desktop_logo')['url']; ?>" alt="<?php echo get_field('desktop_logo')['alt']; ?>">
+        <img class="hero-mobile" src="<?php echo get_field('mobile_logo')['url']; ?>" alt="<?php echo get_field('mobile_logo')['alt']; ?>">
 	</div>
 <?php 
 
