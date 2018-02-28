@@ -19,9 +19,31 @@ a {
 	}
 }
 
+.page-text a, .cantrust-text a, .item-text a,
+.text-container a:not(.barr), .text-item a, 
+.team-container p a, .location-text p a {
+	color: $lightpurple;
+	position: relative;
 
+	&:after {
+		@include transition(all 0.1s ease);
+		content: '';
+	    position: absolute;
+	    height: 2px;
+	    width: 100%;
+	    bottom: 0;
+	    left: 0;
+	    background-color: $lightpurple;
+	    opacity: 0;
+	}
 
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+	}
+}
 
-
-
-
+.text-container p.barr a:hover:after {
+	opacity: 0;
+}
