@@ -851,6 +851,7 @@
 	.blog-item-img {
 		position: relative;
 		@include transition(all 0.3s ease);
+		background-position: center;
 	}
 
 	.blog-item:hover {
