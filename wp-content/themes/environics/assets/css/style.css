@@ -44,11 +44,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 @import url("https://use.typekit.net/acr3pjo.css");
-/* line 4, ../../../../../../../../../../../Applications/CodeKit 2.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
+/* line 4, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
-/* line 9, ../../../../../../../../../../../Applications/CodeKit 2.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
+/* line 9, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
@@ -826,7 +826,7 @@ textarea {
   display: block;
   margin-right: 1.6949152542%;
   width: 23.7288135593%; }
-  /* line 89, ../../../../../../../../../../../Applications/CodeKit 2.app/Contents/Resources/engines/neat/grid/_span-columns.scss */
+  /* line 89, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_span-columns.scss */
   .comment-form-author:last-child, .comment-form-email:last-child {
     margin-right: 0; }
   /* line 161, ../sass/elements/_forms.scss */
@@ -2270,12 +2270,6 @@ a {
 /* line 134, ../sass/site/_posts-and-pages.scss */
 .home .capabilities-container p, .page-fr .capabilities-container p, .page-capabilities .capabilities-container p {
   margin-bottom: 0; }
-  /* line 137, ../sass/site/_posts-and-pages.scss */
-  .home .capabilities-container p.one, .page-fr .capabilities-container p.one, .page-capabilities .capabilities-container p.one {
-    margin-right: 29.4%; }
-  /* line 141, ../sass/site/_posts-and-pages.scss */
-  .home .capabilities-container p.two, .home .capabilities-container p.three, .page-fr .capabilities-container p.two, .page-fr .capabilities-container p.three, .page-capabilities .capabilities-container p.two, .page-capabilities .capabilities-container p.three {
-    margin-left: 29.4%; }
 /* line 146, ../sass/site/_posts-and-pages.scss */
 .home .capabilities-container .span_11, .page-fr .capabilities-container .span_11, .page-capabilities .capabilities-container .span_11 {
   margin-left: auto;
