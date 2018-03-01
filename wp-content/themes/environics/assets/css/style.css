@@ -2852,8 +2852,8 @@ a {
   margin-top: 4rem; }
 /* line 809, ../sass/site/_posts-and-pages.scss */
 .page-thinking .hero-container.double-featured .span_5, .page-work .hero-container.double-featured .span_5 {
-  width: 62.5%;
-  margin-left: auto;
+  width: 87.5%;
+  margin-left: 12.5%;
   margin-bottom: 2rem; }
 /* line 815, ../sass/site/_posts-and-pages.scss */
 .page-thinking .hero-container.double-featured a, .page-work .hero-container.double-featured a {
