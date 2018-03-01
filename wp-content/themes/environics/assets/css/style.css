@@ -462,8 +462,8 @@ p {
   font-size: 1.8rem;
   line-height: 30px;
   line-height: 3rem;
-  margin-bottom: 1rem;
-  color: #524a3f; }
+  color: #524a3f;
+  margin-top: 0; }
 
 /* line 70, ../sass/elements/_typography.scss */
 p.big {
@@ -2227,33 +2227,32 @@ a {
   padding-bottom: 0; }
 /* line 82, ../sass/site/_posts-and-pages.scss */
 .home .text-container .span_11, .page-fr .text-container .span_11 {
-  margin-right: 0;
-  margin-top: 2.666rem; }
-  /* line 86, ../sass/site/_posts-and-pages.scss */
+  margin: 0; }
+  /* line 85, ../sass/site/_posts-and-pages.scss */
   .home .text-container .span_11 p, .page-fr .text-container .span_11 p {
     margin-top: 0; }
-/* line 92, ../sass/site/_posts-and-pages.scss */
+/* line 91, ../sass/site/_posts-and-pages.scss */
 .home .vprop-container, .page-fr .vprop-container {
   padding-bottom: 9rem;
   border-bottom: 1px solid #979087; }
-/* line 97, ../sass/site/_posts-and-pages.scss */
+/* line 96, ../sass/site/_posts-and-pages.scss */
 .home .cantrust-container, .page-fr .cantrust-container {
   border-bottom: 1px solid #979087;
   padding-bottom: 4.5rem; }
-  /* line 101, ../sass/site/_posts-and-pages.scss */
+  /* line 100, ../sass/site/_posts-and-pages.scss */
   .home .cantrust-container .span_6, .home .cantrust-container .frm_form_field, .home .cantrust-container .uploads, .page-fr .cantrust-container .span_6, .page-fr .cantrust-container .frm_form_field, .page-fr .cantrust-container .uploads {
     margin-top: 2.666rem; }
 
-/* line 108, ../sass/site/_posts-and-pages.scss */
+/* line 107, ../sass/site/_posts-and-pages.scss */
 .home .text-container, .home .capabilities-container,
 .home .featured-container, .home .cantrust-container, .page-fr .text-container, .page-fr .capabilities-container,
 .page-fr .featured-container, .page-fr .cantrust-container, .page-capabilities .text-container, .page-capabilities .capabilities-container,
 .page-capabilities .featured-container, .page-capabilities .cantrust-container {
   padding-top: 9rem; }
-/* line 114, ../sass/site/_posts-and-pages.scss */
+/* line 113, ../sass/site/_posts-and-pages.scss */
 .home .text-container, .page-fr .text-container, .page-capabilities .text-container {
   padding-top: 6rem; }
-/* line 119, ../sass/site/_posts-and-pages.scss */
+/* line 118, ../sass/site/_posts-and-pages.scss */
 .home .text-container, .home .capabilities-wrapper, .page-fr .text-container, .page-fr .capabilities-wrapper, .page-capabilities .text-container, .page-capabilities .capabilities-wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -2262,16 +2261,17 @@ a {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex; }
-/* line 125, ../sass/site/_posts-and-pages.scss */
+/* line 124, ../sass/site/_posts-and-pages.scss */
 .home .capabilities-container .featured-img, .page-fr .capabilities-container .featured-img, .page-capabilities .capabilities-container .featured-img {
   padding: 2rem;
   background-size: cover; }
-  /* line 129, ../sass/site/_posts-and-pages.scss */
+  /* line 128, ../sass/site/_posts-and-pages.scss */
   .home .capabilities-container .featured-img:hover, .page-fr .capabilities-container .featured-img:hover, .page-capabilities .capabilities-container .featured-img:hover {
     transform: scale(1); }
-/* line 134, ../sass/site/_posts-and-pages.scss */
+/* line 133, ../sass/site/_posts-and-pages.scss */
 .home .capabilities-container p, .page-fr .capabilities-container p, .page-capabilities .capabilities-container p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 1rem; }
 /* line 146, ../sass/site/_posts-and-pages.scss */
 .home .capabilities-container .span_11, .page-fr .capabilities-container .span_11, .page-capabilities .capabilities-container .span_11 {
   margin-left: auto;
