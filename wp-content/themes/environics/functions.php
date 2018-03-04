@@ -317,10 +317,10 @@ add_filter( 'redirect_canonical', 'redirect_ca_to_homepage' );
  */
 function environics_scripts() {
 	//Screen stylesheet
-	wp_enqueue_style( 'environics-style', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/themes/environics/assets/css/style.css', array(), '1.1' );
+	wp_enqueue_style( 'environics-style', '/wp-content/themes/environics/assets/css/style.css', array(), '1.2' );
 
 	//Print stylesheet
-	wp_enqueue_style( 'environics-print-style', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/themes/environics/assets/css/print.css', null, null, 'print' );
+	wp_enqueue_style( 'environics-print-style', '/wp-content/themes/environics/assets/css/print.css', null, null, 'print' );
 
 	//Fonts 
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Lora');
@@ -330,13 +330,13 @@ function environics_scripts() {
 
 	//Deregister Wordpress baked-in JQuery and load from CDN
 	wp_deregister_script('jquery');
-   	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js", false, null);
+   	wp_register_script('jquery', "//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js", false, null);
    	wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 'environics-navigation', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/themes/environics/assets/js/navigation.js', array(), '20151215', true  );
+	wp_enqueue_script( 'environics-navigation', '/wp-content/themes/environics/assets/js/navigation.js', array(), '20151215', true  );
 
 	//FluidVids
-	wp_enqueue_script( 'fluidvids', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/themes/environics/assets/js/fluidvids/dist/fluidvids.min.js', array(), '2.4.1', true);
+	wp_enqueue_script( 'fluidvids', '/wp-content/themes/environics/assets/js/fluidvids/dist/fluidvids.min.js', array(), '2.4.1', true);
 
 	//Flickity
 	wp_enqueue_script( 'flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), null, true);
@@ -350,9 +350,9 @@ function environics_scripts() {
 
 	wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBFjS94A96ckf7ORh6XGSeMZSumZyX7liY', array(), '3', true );
 
-	wp_enqueue_script( 'google-map-init', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/themes/environics/assets/js/google-maps.js', array('google-map', 'jquery'), '0.1', true );
+	wp_enqueue_script( 'google-map-init', '/wp-content/themes/environics/assets/js/google-maps.js', array('google-map', 'jquery'), '0.1', true );
 
-	wp_enqueue_script( 'environics-scripts', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/themes/environics/assets/js/scripts-min.js', array(), '2.4.1', true);
+	wp_enqueue_script( 'environics-scripts', '/wp-content/themes/environics/assets/js/scripts-min.js', array(), '2.4.1', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
