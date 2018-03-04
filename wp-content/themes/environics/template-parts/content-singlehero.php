@@ -20,7 +20,7 @@
 		<div class="hero-container">
 			<div class="sub-hero span_8 single-page<?php echo $classes; ?>" style="background-image:url(<?php echo $hero; ?>)"></div>
 			<div class="span_8">
-				<h2 id="content"><?php the_title(); ?></h2>
+				<h2><?php the_title(); ?></h2>
 				<?php if(get_post_type() != 'work') : ?>
 				<!-- <p><?php // the_field('post_subheader'); ?></p> -->
 				<?php endif; ?>

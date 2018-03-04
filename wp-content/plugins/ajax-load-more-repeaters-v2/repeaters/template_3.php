@@ -3,6 +3,7 @@
 	 * Template 3: Masonry Gallery for Work page
 	 */
 	$imgSrc_array = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+	$title = get_post(get_post_thumbnail_id($post_object->ID))->post_title;
 	$imgSrc = $imgSrc_array[0];
 	$label = get_field("client");
 	$postType = get_post_type();
@@ -34,7 +35,7 @@
 ?>
 	<div class="featured span_5">
     	<div class="img-container">
-    		<a href="<?php echo get_permalink($post->ID); ?>">
+    		<a href="<?php echo get_permalink($post->ID); ?>" title="<?php echo $title; ?>">
 				<div class="featured-img square" <?php echo $inlineImg; ?>></div>
     		</a>
     	</div>
